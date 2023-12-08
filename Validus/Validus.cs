@@ -63,6 +63,7 @@ public static class Validus
     }
     private static bool VerificarSenhaSegura(string senha, int minChar)
     {
+        //B4Rc3L0N$
         string padraoSenha = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{" + minChar + ",}$";
         if (Regex.IsMatch(senha, padraoSenha))
         {
